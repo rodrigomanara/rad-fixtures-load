@@ -1,0 +1,39 @@
+{
+    "name": "knplabs/rad-fixtures-load",
+    "description": "A command to load them all",
+    "license": "MIT",
+    "keywords": ["Symfony2", "alice", "fixtures", "load", "command"],
+    "authors": [
+        {
+            "name": "KNPLabs Team",
+            "email": "hello@knplabs.com"
+        }
+    ],
+    "require": {
+        "doctrine/common": "~2.0",
+        "doctrine/orm": "~2.0",
+        "nelmio/alice": "~1.5||~2.0",
+        "php": ">=5.4",
+        "symfony/dependency-injection": "~2.3|~3.0",
+        "symfony/finder": "~2.3|~3.0",
+        "symfony/framework-bundle": "~2.3|~3.0",
+        "symfony/http-kernel": "~2.3|~3.0"
+    },
+    "require-dev": {
+        "pedrotroller/php-cs-custom-fixer": "~1.2.1",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Knp\\Rad\\FixturesLoad\\": "src/Knp/Rad/FixturesLoad/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
