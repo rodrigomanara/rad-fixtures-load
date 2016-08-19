@@ -3,3 +3,11 @@ services:
         class: Fixture\BuilderBundle\Utils\FileManager
         calls:
              - [setLogger, ["@logger"]]
+    
+    fixture.mapping.finder:
+        class: Fixture\BuilderBundle\Mapping\MappingFinder
+        calls:
+             - [SetSrc, ["%kernel.root_dir%/../src/"]]        
+             - [SetRoot, ["%kernel.root_dir%"]]      
+             - [SetContainer, ["@service_container"]]    
+ 

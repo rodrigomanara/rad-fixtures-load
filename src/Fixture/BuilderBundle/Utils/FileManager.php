@@ -29,11 +29,7 @@ class FileManager extends Filesystem {
      * @return boolean
      */
     public function checkDir($dir) {
-
-        if (is_dir($dir)) {
-            return true;
-        }
-        return false;
+        return is_dir($dir);
     }
 
     /**
