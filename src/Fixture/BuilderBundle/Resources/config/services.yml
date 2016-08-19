@@ -1,0 +1,5 @@
+services: 
+    fixture.file.utilities:
+        class: Fixture\BuilderBundle\Utils\FileManager
+        calls:
+             - [setLogger, ["@logger"]]

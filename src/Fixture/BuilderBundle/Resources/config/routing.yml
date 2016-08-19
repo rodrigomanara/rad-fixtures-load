@@ -1,0 +1,3 @@
+fixture_builder_homepage:
+    path:     /
+    defaults: { _controller: FixtureBuilderBundle:Default:index }
