@@ -1,7 +1,7 @@
 vendor
 bin
 composer.lock
-src\Beluga\
-src\Application\
+src\Beluga
+src\Application
 \nbproject
-\app\Resources\
+\app\Resources 
